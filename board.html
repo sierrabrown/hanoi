@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styling.css" media="screen">
+  <script src="underscore.js"></script>
+  <script src="jquery.js"></script>
+  <script src="ttt.js"></script>
+  <script src="ttt_ui.js"></script>
+</head>
+
+<body>
+  
+  <h3>Play Tic Tac Toe</h3>
+  
+  <div id='gameBoard'></div>
+  
+  <script charset='utf-8'>
+    $(function() {
+      var user = new TTT.UI($('#gameBoard'))
+      user.setUpCanvas();
+      user.setUpHandlers();
+    })
+  </script>
+  
+</body>
+
+</html>

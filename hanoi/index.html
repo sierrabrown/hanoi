@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <title>Towers of Hanoi</title>
+  <link rel='stylesheet' href='style.css' media='screen'>
+  <script src='underscore.js'></script>
+  <script src='jquery.js'></script>
+  <script src='hanoi.js'></script>
+  <script src='ui.js'></script>
+</head>
+
+<body>
+  
+  <h3>Play Hanoi!</h3>
+  
+  <div id='Towers'></div>
+  
+  <script charset='utf-8'>
+    $(function() {
+      var user = new Hanoi.UI($('#Towers'))
+      user.setUpCanvas();
+      user.setUpHandlers();
+    })
+  </script>
+  
+</body>
+
+</html>
